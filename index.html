@@ -1,0 +1,102 @@
+[metrics] Session metrics written: /tmp/kavia/workspace/code-generation/session-metrics.json
+INFO:code_generation_core_agent.metrics.metrics_store:Auto-flush: metrics written to /tmp/kavia/workspace/code-generation/session-metrics.json
+[metrics] Project metrics updated: /tmp/kavia/workspace/code-generation/project-metrics.json
+[metrics] Session metrics written: /tmp/kavia/workspace/code-generation/session-metrics.json
+INFO:code_generation_core_agent.metrics.metrics_store:Auto-flush: metrics written to /tmp/kavia/workspace/code-generation/session-metrics.json
+[metrics] Project metrics updated: /tmp/kavia/workspace/code-generation/project-metrics.json
+WARNING:browsergym.core.env:An error occurred while extracting the dom and axtree. Retrying (4/5 tries left).
+Error('Frame.evaluate: Execution context was destroyed, most likely because of a navigation')
+[metrics] Session metrics written: /tmp/kavia/workspace/code-generation/session-metrics.json
+INFO:code_generation_core_agent.metrics.metrics_store:Auto-flush: metrics written to /tmp/kavia/workspace/code-generation/session-metrics.json
+[metrics] Project metrics updated: /tmp/kavia/workspace/code-generation/project-metrics.json
+2026-01-20T06:28:08.071568+00:00 Activity updated for task cm7ed2978d at 2026-01-20 06:28:08.071558+00:00
+2026-01-20T06:28:08.073339+00:00 Activity updated for task cm7ed2978d at 2026-01-20 06:28:08.073331+00:00
+📝 Updating Agent Context
+✅ Context validation passed
+Message resolved ChatMessage(id=9168b51b-a960-47db-bb23-60d003904683, type = llm content= 
+
+ The MCP Puppeteer run did not successfully load content from **https://skillrank.io/** (it appears to have timed out / loaded a blank page), so **no visible text could be extracted**.
+
+The agent wrote the extraction output here:
+- `attachments/skillrank_io_extraction_result.txt`
+
+What would you like to do next?
+- “Retry text extraction with a longer timeout”  
+- “Retry extraction after waiting for network idle”  
+- “Take a screenshot of skillrank.io for debugging”  
+- Tell me if the environment needs a proxy / has network restrictions for skillrank.io
+- Upload an HTML export or screenshot and I’ll extract the text from that, status=MessageStatus.NEEDS_RESPONSE), parent_id=None), metadata=None), timestamp=2026-01-20 06:27:40.842074+00:00),requires_resolution=True), extra={'option_selected': 'true', 'selected_option': 'Retry text extraction with a longer timeout'})
+2026-01-20T06:28:08.076273+00:00 🔍 Processing command: 'send_message' with input_data: None
+GitController.handle_command called with: send_message and input: None
+Available commands in command map: ['commit_code', 'pull_code', 'push_code', 'list_branches', 'git_status', 'git_log', 'create_branch', 'switch_branch', 'git_revert_to', 'execute_git_command', 'create_pr', 'merge_to_kavia_main', 'switch_to_checkpoints', 'list_repositories', 'switch_repository', 'controller_status', 'auto_commit_toggle', 'auto_push_toggle', 'commit_changes']
+No handler found for command: send_message
+Handling container deployment command: send_message with input: None
+Handling deployment command: send_message with input: None
+2026-01-20T06:28:08.077130+00:00 ❌ Command 'send_message' not handled by any controller
+2026-01-20T06:28:08.077154+00:00    - Git controller exists: True
+2026-01-20T06:28:08.077177+00:00    - Deployment controller exists: True
+✅ Successfully updated agent context
+2026-01-20T06:28:08.077185+00:00    - Conatiner Deployment controller exists: True
+2026-01-20T06:28:08.077325+00:00    - Available git commands: ['commit_code', 'pull_code', 'push_code', 'list_branches', 'git_status', 'git_log', 'create_branch', 'switch_branch', 'git_revert_to', 'execute_git_command', 'create_pr', 'merge_to_kavia_main', 'switch_to_checkpoints', 'list_repositories', 'switch_repository', 'controller_status', 'auto_commit_toggle', 'auto_push_toggle', 'commit_changes']
+2026-01-20T06:28:08.077352+00:00    - Available deployment commands: ['list_dir', 'start_deploy', 'deployment_status', 'manifest', 'save_configuration']
+2026-01-20T06:28:08.077362+00:00    - Available deployment commands: ['start_container_deployment', 'deployment_container_status']
+Error trimming messages array in Mongo: Cannot do inclusion on field messages.id in exclusion projection, full error: {'ok': 0.0, 'errmsg': 'Cannot do inclusion on field messages.id in exclusion projection', 'code': 31253, 'codeName': 'Location31253'}
+Extra None
+Processing attachments None
+Error processing attachments: 'NoneType' object is not iterable
+2026-01-20T06:28:08.158606+00:00 Activity updated for task cm7ed2978d at 2026-01-20 06:28:08.158598+00:00
+📝 Updating Agent Context
+Message added ChatMessage(id=1d20a3a8-c2df-4734-943f-2335ee409dc8, type = user content=Retry text extraction with a longer timeout, status=MessageStatus.PENDING), parent_id=9168b51b-a960-47db-bb23-60d003904683), metadata={'user_id': None}), timestamp=2026-01-20 06:28:08.158424),requires_resolution=True), extra=None)
+✅ Context validation passed
+Message dict {'id': '1d20a3a8-c2df-4734-943f-2335ee409dc8', 'content': 'Retry text extraction with a longer timeout', 'msg_type': 'user', 'timestamp': '2026-01-20T06:28:08.158424+00:00', 'status': 'pending', 'requires_resolution': True, 'resolution_id': None, 'parent_id': '9168b51b-a960-47db-bb23-60d003904683', 'metadata': {'user_id': None}, 'attachments': [], 'extra': None, 'options': [], 'non_options': []}
+2026-01-20T06:28:08.161019+00:00 Activity updated for task cm7ed2978d at 2026-01-20 06:28:08.161015+00:00
+DEBUG: Disabling task creation
+📝 Updating Agent Context
+Message added ChatMessage(id=b469cc85-c75a-426b-bfdd-94c5657c5af8, type = system content=Done, status=MessageStatus.COMPLETED), parent_id=9168b51b-a960-47db-bb23-60d003904683), metadata=None), timestamp=2026-01-20 06:28:08.160871),requires_resolution=False), extra={})
+DEBUG: Full request: SystemChatRequest(message_id='1d20a3a8-c2df-4734-943f-2335ee409dc8', content='Retry text extraction with a longer timeout', response_queue=<Queue at 0x763cc41becc0 maxsize=0>, parent_id='9168b51b-a960-47db-bb23-60d003904683', attachments=[], extra=None, options=[], non_options=[])
+✅ Successfully updated agent context
+Message dict {'id': 'b469cc85-c75a-426b-bfdd-94c5657c5af8', 'content': 'Done', 'msg_type': 'system', 'timestamp': '2026-01-20T06:28:08.160871+00:00', 'status': 'completed', 'requires_resolution': False, 'resolution_id': None, 'parent_id': '9168b51b-a960-47db-bb23-60d003904683', 'metadata': None, 'attachments': None, 'extra': {}, 'options': ['Retry text extraction with a longer timeout', 'Retry extraction after waiting for network idle', 'Take a screenshot of skillrank.io for debugging'], 'non_options': ['Tell me if the environment needs a proxy / has network restrictions for skillrank.io', 'Upload an HTML export or screenshot and I’ll extract the text from that']}
+Parent ID: 9168b51b-a960-47db-bb23-60d003904683 Request ID: 1d20a3a8-c2df-4734-943f-2335ee409dc8
+✅ Context validation passed
+2026-01-20T06:28:08.164386+00:00 Activity updated for task cm7ed2978d at 2026-01-20 06:28:08.164381+00:00
+Error trimming messages array in Mongo: Cannot do inclusion on field messages.id in exclusion projection, full error: {'ok': 0.0, 'errmsg': 'Cannot do inclusion on field messages.id in exclusion projection', 'code': 31253, 'codeName': 'Location31253'}
+Message added ChatMessage(id=6be41baa-7816-4d96-b6c6-6ccf8c5cb63b, type = system content=Resolved user message, status=MessageStatus.COMPLETED), parent_id=1d20a3a8-c2df-4734-943f-2335ee409dc8), metadata=None), timestamp=2026-01-20 06:28:08.164788),requires_resolution=False), extra={})
+📝 Updating Agent Context
+✅ Successfully updated agent context
+2026-01-20T06:28:08.164919+00:00 Activity updated for task cm7ed2978d at 2026-01-20 06:28:08.164915+00:00
+Message dict {'id': '6be41baa-7816-4d96-b6c6-6ccf8c5cb63b', 'content': 'Resolved user message', 'msg_type': 'system', 'timestamp': '2026-01-20T06:28:08.164788+00:00', 'status': 'completed', 'requires_resolution': False, 'resolution_id': None, 'parent_id': '1d20a3a8-c2df-4734-943f-2335ee409dc8', 'metadata': None, 'attachments': None, 'extra': {}, 'options': [], 'non_options': []}
+Error trimming messages array in Mongo: Cannot do inclusion on field messages.id in exclusion projection, full error: {'ok': 0.0, 'errmsg': 'Cannot do inclusion on field messages.id in exclusion projection', 'code': 31253, 'codeName': 'Location31253'}
+Message resolved ChatMessage(id=9168b51b-a960-47db-bb23-60d003904683, type = llm content= 
+
+ The MCP Puppeteer run did not successfully load content from **https://skillrank.io/** (it appears to have timed out / loaded a blank page), so **no visible text could be extracted**.
+
+The agent wrote the extraction output here:
+- `attachments/skillrank_io_extraction_result.txt`
+
+What would you like to do next?
+- “Retry text extraction with a longer timeout”  
+- “Retry extraction after waiting for network idle”  
+- “Take a screenshot of skillrank.io for debugging”  
+- Tell me if the environment needs a proxy / has network restrictions for skillrank.io
+- Upload an HTML export or screenshot and I’ll extract the text from that, status=MessageStatus.RESOLVED), parent_id=None), metadata=None), timestamp=2026-01-20 06:27:40.842074+00:00),requires_resolution=True), extra={'option_selected': 'true', 'selected_option': 'Retry text extraction with a longer timeout'})
+2026-01-20T06:28:08.171424+00:00 Activity updated for task cm7ed2978d at 2026-01-20 06:28:08.171421+00:00
+✅ Context validation passed
+📝 Updating Agent Context
+📝 Updating Agent Context
+📝 Updating Agent Context
+✅ Context validation passed
+2026-01-20T06:28:08.173497+00:00 Activity updated for task cm7ed2978d at 2026-01-20 06:28:08.173493+00:00
+[92m06:28:08 - LiteLLM:INFO[0m: utils.py:3427 - 
+LiteLLM completion() model= gpt-5.2; provider = openai
+INFO:LiteLLM:
+LiteLLM completion() model= gpt-5.2; provider = openai
+✅ Context validation passed
+Message resolved ChatMessage(id=1d20a3a8-c2df-4734-943f-2335ee409dc8, type = user content=Retry text extraction with a longer timeout, status=MessageStatus.RESOLVED), parent_id=9168b51b-a960-47db-bb23-60d003904683), metadata={'user_id': None}), timestamp=2026-01-20 06:28:08.158424+00:00),requires_resolution=True), extra=None)
+Message added ChatMessage(id=1d20a3a8-c2df-4734-943f-2335ee409dc8, type = user content=Retry text extraction with a longer timeout, status=MessageStatus.RESOLVED), parent_id=9168b51b-a960-47db-bb23-60d003904683), metadata={'user_id': None}), timestamp=2026-01-20 06:28:08.158424+00:00),requires_resolution=True), extra=None)
+✅ Successfully updated agent context
+Error trimming messages array in Mongo: Cannot do inclusion on field messages.id in exclusion projection, full error: {'ok': 0.0, 'errmsg': 'Cannot do inclusion on field messages.id in exclusion projection', 'code': 31253, 'codeName': 'Location31253'}
+✅ Successfully updated agent context
+Error trimming messages array in Mongo: Cannot do inclusion on field messages.id in exclusion projection, full error: {'ok': 0.0, 'errmsg': 'Cannot do inclusion on field messages.id in exclusion projection', 'code': 31253, 'codeName': 'Location31253'}
+Message dict {'id': '1d20a3a8-c2df-4734-943f-2335ee409dc8', 'content': 'Retry text extraction with a longer timeout', 'msg_type': 'user', 'timestamp': '2026-01-20T06:28:08.158424+00:00', 'status': 'resolved', 'requires_resolution': True, 'resolution_id': '6be41baa-7816-4d96-b6c6-6ccf8c5cb63b', 'parent_id': '9168b51b-a960-47db-bb23-60d003904683', 'metadata': {'user_id': None}, 'attachments': [], 'extra': None, 'options': [], 'non_options': []}
+✅ Successfully updated agent context
+✅ Context validation passed
